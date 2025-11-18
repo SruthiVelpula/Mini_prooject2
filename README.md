@@ -1,6 +1,5 @@
 # Social Distancing Detection using Pose Estimation (Jetson Nano)
-This project implements a real-time social distancing detection system using the NVIDIA Jetson Nano and the jetson-inference library. It uses pose estimation (poseNet) to detect people in a video stream, compute distances between individuals, identify violations, and generate structured logs for further analysis.
-
+This project is part of the Applied AI – Jetson AI Lab and focuses on building a real-time social distancing detection system using NVIDIA’s Jetson Nano and the jetson-inference poseNet model.The system detects humans, extracts keypoints, computes distances between people, and flags violations when individuals are too close to each other.
 # Features
 Real-time pose estimation powered by poseNet
 Center-point extraction for each detected person
@@ -20,10 +19,11 @@ OpenCV
 USB or CSI camera
 
 # Project Structure
-Social-Distancing-Detection/
- ├── social_distancce.py        # Main script
- ├── violations_log.csv         # Sample log file
- └── distancing_output.mp4      # Optional output video
+Mini_project2/
+ ├── social_distancce.py       # Main project script
+ ├── violations_log.csv        # CSV log (sample)
+ └── distancing_output.mp4     # Optional video output
+
 
 # How to Run
  1. Webcam input
