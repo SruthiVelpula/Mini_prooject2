@@ -65,8 +65,29 @@ approx_meters	     Estimated meters (if ppm is supplied)
 violation	         1 = violation, 0 = safe
 
 # Example Output
-People detected: 2
-Distance between 0 & 1 = 92px -> VIOLATION
+Time,People_Count,Violations,Min_Distance
+22:10:07,0,0,
+22:10:07,0,0,
+22:10:07,0,0,
+22:10:08,2,0,363.101846495234
+22:10:08,2,0,367.2254976959526
+22:10:08,2,0,373.8347582726195
+22:10:08,2,0,378.41257559846386
+22:10:08,2,0,378.152379618811
+22:10:08,2,0,384.8951268354052
+22:10:08,2,0,396.16158197026781436
+
+People_Count = 0 → no one detected
+People_Count = 2 → two people in frame
+Violations = 0 → distance is safe
+Min_Distance = 363.10 px → closest pair distance in pixels
+
+# Terminal Output
+The terminal prints the same information in a readable format.
+Example:
+[INFO] People detected: 2
+[INFO] Minimum distance: 363.10 px
+[INFO] Violation: No
 
 # Applications
 Classroom and laboratory monitoring
